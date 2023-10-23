@@ -9,6 +9,12 @@ export default {
         pre: ['Pretendard Variable', ...defaultTheme.fontFamily.sans],
       },
     },
+    colors: {
+      primary: '#E55D87',
+      secondary: '#5FC3E4',
+      white: '#fff',
+      black: '#333',
+    },
   },
   plugins: [],
 };

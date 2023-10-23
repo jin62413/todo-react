@@ -5,14 +5,16 @@ import Todo from './Todo';
 
 function RootLayout() {
   return (
-    <>
+    <div className="min-h-screen bg-gradient-to-br from-primary to-secondary flex flex-col justify-center items-center gap-[72px]">
       <Title />
-      <div>
-        <Today />
-        <Clock />
+      <div className="flex">
+        <div>
+          <Today />
+          <Clock />
+        </div>
+        <Todo />
       </div>
-      <Todo />
-    </>
+    </div>
   );
 }
 
