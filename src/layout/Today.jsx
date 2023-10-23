@@ -21,7 +21,7 @@ function Today() {
 
   return (
     <div>
-      <p>{today}</p>
+      <p className="text-[28px] text-white font-semibold">{today}</p>
     </div>
   );
 }

@@ -17,7 +17,7 @@ function Clock() {
   }, []);
 
   return (
-    <div>
+    <div className="text-white text-[300px] font-extrabold leading-[80%]">
       <p>{hours}</p>
       <p>{minutes}</p>
     </div>
