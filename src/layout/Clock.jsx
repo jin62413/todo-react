@@ -8,7 +8,14 @@ function Clock() {
     const clock = setInterval(() => {
       let time = new Date();
       setHours(time.getHours());
+      if (time.getHours() == 0) {
+        setHours('00');
+      }
+
       setMinutes(time.getMinutes());
+      if (time.getMinutes() < 10) {
+        setMinutes('0' + time.getMinutes());
+      }
     }, 1000);
 
     return () => {
@@ -18,7 +25,7 @@ function Clock() {
 
   return (
     <div className="text-white text-[300px] font-extrabold leading-[80%]">
-      <p>{hours}</p>
+      <p className="mb-11">{hours}</p>
       <p>{minutes}</p>
     </div>
   );

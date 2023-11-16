@@ -20,9 +20,9 @@ function Today() {
   }, []);
 
   return (
-    <div>
-      <p className="text-[28px] text-white font-semibold">{today}</p>
-    </div>
+    <>
+      <p className="text-[28px] text-white font-semibold mb-3">{today}</p>
+    </>
   );
 }
 
